@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://*.tile.openstreetmap.org https://*.basemaps.cartocdn.com; media-src 'self' blob: data:; object-src 'none'; base-uri 'self'; form-action 'self';" />
+
+    <!-- ── Favicon ─────────────────────────────────────────────────── -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+
+    <!-- ── Viewport / PWA ───────────────────────────────────────────── -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- ── Theme & Status Bar ───────────────────────────────────────── -->
+    <meta name="theme-color" content="#0A0F0D" />
+    <meta name="background-color" content="#0A0F0D" />
+
+    <!-- ── iOS PWA (Safari) ─────────────────────────────────────────── -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Tiva" />
+    <!-- iOS launch image (minimal — Vite PWA plugin handles full set) -->
+    <link rel="apple-touch-startup-image" href="/icons/apple-touch-icon.png" />
+
+    <!-- ── Android / Microsoft ──────────────────────────────────────── -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="msapplication-TileColor" content="#0A0F0D" />
+    <meta name="msapplication-TileImage" content="/icons/icon-144x144.png" />
+
+    <!-- ── SEO / Social ─────────────────────────────────────────────── -->
+    <meta name="description" content="Tiva — AI-powered predictive healthcare companion. Predicting tomorrow's health, today." />
+    <meta property="og:title" content="Tiva — AI Predictive Healthcare Platform" />
+    <meta property="og:description" content="Your AI health companion for individuals, families, and caregivers. Predicting tomorrow's health, today." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/icons/icon-512x512.png" />
+
+    <!-- ── App Name ──────────────────────────────────────────────────── -->
+    <title>Tiva — Predicting Tomorrow's Health, Today</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
