@@ -1,0 +1,3 @@
+# Netlify, Cloudflare Pages, Render SPA Fallback Redirects
+# All routes rewrite to index.html with HTTP 200
+/*    /index.html   200
